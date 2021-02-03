@@ -9,6 +9,7 @@ print("-------------------")
 # asking for an input
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
 
+# create list of options
 options = ['rock','paper','scissors']
 
 #validate input
