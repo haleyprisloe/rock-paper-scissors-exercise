@@ -44,6 +44,10 @@ elif user_choice == "scissors" and computer_choice == "paper":
 elif user_choice == "scissors" and computer_choice == "rock":
     print("Oh! The computer won, that's ok!")
 
+#farewell message
+print("-------------------")
+print"Thanks for playing")
+
 exit()
 
 
