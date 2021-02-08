@@ -15,7 +15,7 @@ options = ['rock','paper','scissors']
 #validate input
 user_choice.lower()
 if user_choice not in options:
-    print("OOPS, please choose a valid option and try again")
+    print("OOPS, please start again and choose a valid option")
     exit()
 
 # print user input
@@ -47,6 +47,7 @@ elif user_choice == "scissors" and computer_choice == "rock":
 #farewell message
 print("-------------------")
 print("Thanks for playing")
+print("-------------------")
 
 exit()
 
