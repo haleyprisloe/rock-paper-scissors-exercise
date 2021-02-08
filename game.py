@@ -46,7 +46,7 @@ elif user_choice == "scissors" and computer_choice == "rock":
 
 #farewell message
 print("-------------------")
-print"Thanks for playing")
+print("Thanks for playing")
 
 exit()
 
