@@ -1,24 +1,22 @@
-# import random.choice
+# some code and comments in this file are adapted from Professor Rosetti and/or in class exercises
+
+# import packages
 from random import choice
-
 import os
-
 from dotenv import load_dotenv
 
 # setting environment variables
-
 load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file. see the package docs for more info
 
 USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
 
-
-# intro statement
+# intro statement / print player name
 print("-------------------")
 print("Welcome to my Rock-Paper-Scissors game...")
 print(f"PLAYER: '{USER_NAME}'")
 print("-------------------")
 
-# asking for an input
+# asking for an input fromt the player
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
 
 # create list of options
@@ -27,7 +25,7 @@ options = ['rock','paper','scissors']
 #validate input
 user_choice.lower()
 if user_choice not in options:
-    print("OOPS, please start again and choose a valid option")
+    print("Oops, please start again and choose a valid option")
     exit()
 
 # print user input
@@ -38,7 +36,6 @@ computer_choice = choice(options)
 
 # print computer input
 print(f"The computer chose: {computer_choice}")
-
 
 # determining who won
 if user_choice == computer_choice:
