@@ -1,9 +1,21 @@
 # import random.choice
 from random import choice
 
+import os
+
+from dotenv import load_dotenv
+
+# setting environment variables
+
+load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file. see the package docs for more info
+
+USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
+
+
 # intro statement
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("Welcome to my Rock-Paper-Scissors game...")
+print(f"PLAYER: '{USER_NAME}'")
 print("-------------------")
 
 # asking for an input
@@ -46,7 +58,7 @@ elif user_choice == "scissors" and computer_choice == "rock":
 
 #farewell message
 print("-------------------")
-print("Thanks for playing")
+print("Thanks for playing!")
 print("-------------------")
 
 exit()
