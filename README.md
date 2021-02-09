@@ -37,4 +37,4 @@ In in the root directory of your local repository, create a new file called ".en
 Run the game script:
 
 ```py
-python app/game.py
+python game.py
