@@ -1,9 +1,5 @@
 # rock-paper-scissors-exercise
-
-# rock-paper-scissors-exercise
-# Includes a README file with detailed instructions, including the appropriate setup instructions, and the exact conda, pip, and python commands needed to run the program from scratch.	
-
-## INSTRUCTIONS
+# INSTRUCTIONS
 
 Fork this [remote repository](https://github.com/haleyprisloe/rock-paper-scissors-exercise) under your own control, then "clone" or download your remote copy onto your local computer.
 
